@@ -10,8 +10,8 @@ contract FeesToken is ERC20, Ownable {
     mapping(address => bool) public addressBlacklisted;
     address public mainFundWallet;
 
-    uint32 public transferFee = 200; // Consumes while transfer of FeesToken. 10 in percent
-    uint32 public burnTokenFee = 300; // Consumes while burn of FeesToken. 10 in percent
+    uint32 public transferFee = 400; // Consumes while transfer of FeesToken. 10 in percent
+    uint32 public burnTokenFee = 500; // Consumes while burn of FeesToken. 10 in percent
     uint256 public constant FeesCollector = 10000;
 
     constructor(string memory _name, string memory _symbol, address payable _FTNWallet) ERC20(_name, _symbol) {
